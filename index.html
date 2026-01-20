@@ -3,157 +3,952 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kripik Nagih - Kriuknya Juara!</title>
+    <title>NEON TOPUP | Top-up Game Tercepat & Terpercaya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .gradient-yellow { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
-        .product-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0d0118; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-game:hover { transform: translateY(-8px); border-color: #a855f7; box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.4); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .bg-purple-gradient { background: linear-gradient(135deg, #6d28d9 0%, #1e1b4b 100%); }
     </style>
 </head>
-<body class="bg-orange-50 text-gray-800">
+<body class="text-gray-100">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-orange-600 tracking-tight">KERIPK NAGIH513</h1>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-orange-500">Beranda</a>
-                <a href="#rasa" class="hover:text-orange-500">Varian Rasa</a>
-                <a href="#tentang" class="hover:text-orange-500">Keunggulan</a>
+    <nav class="sticky top-0 z-50 glass px-4 py-3 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            <div class="text-xl md:text-2xl font-extrabold tracking-tighter text-purple-500">
+                NEON<span class="text-white">TOPUP</span>
             </div>
-            <a href="//wa.me/6282124360741?text=Halo%20saya%20mau%20pesan">Pesan Sekarang</a>" <class=" bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition">Pesan Sekarang</a>
+        </div>
+        <div class="hidden md:flex gap-6 text-sm font-semibold italic">
+            <a href="#" class="text-purple-400">BERANDA</a>
+            <a href="#" class="hover:text-purple-400 transition">CEK PESANAN</a>
+            <a href="#" class="hover:text-purple-400 transition">PROMO</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="text-lg"><i class="fas fa-search"></i></button>
+            <button class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full font-bold text-xs md:text-sm transition shadow-lg shadow-purple-900/40">
+                DAFTAR
+            </button>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 px-6 gradient-yellow text-white">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Nikmati Kripik Pisang <br><span class="text-orange-900">Premium & Renyah!</span></h2>
-                <p class="text-lg mb-8 opacity-90">Camilan sehat dari pisang pilihan dengan bumbu yang melimpah. Sekali coba, dijamin bakal nagih terus!</p>
-                <a href="#rasa" class="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-orange-100 transition">Lihat 3 Varian Rasa</a>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-orange-200/50 rounded-full blur-3xl"></div>
-                    <img src="https://i.postimg.cc/bvSwn2xV/Gemini-Generated-Image-wbjdpmwbjdpmwbjd.png" alt="Kripik Pisang" class="relative rounded-3xl shadow-2xl w-80 md:w-96 border-8 border-white">
-                </div>
-            </div>
-        </div>
-    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <section id="rasa" class="py-24 px-6">
-        <div class="container mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-4">Pilih <span class="text-orange-500">Favoritmu!</span></h3>
-            <p class="text-gray-500 mb-16">Tersedia dalam 3 varian rasa yang menggoyang lidah</p>
-            
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
-                    <img src="https://i.postimg.cc/T1DPVvq6/Whats-App-Image-2026-01-18-at-20-25-41.jpg">
-                    <h4 class="text-2xl font-bold mb-3">Original</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Rasa klasik pisang pilihan yang pas dan renyah.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 5.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Original" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center relative">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Paling Laris</div>
-                    <img src="https://i.postimg.cc/28ndQVw3/Whats-App-Image-2026-01-18-at-20-25-37.jpg">
-                    <h4 class="text-2xl font-bold mb-3">Cokelat Lumer</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Balutan bubuk cokelat premium yang tebal dan melimpah di setiap gigitan.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 8.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Cokelat" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
-                    <img src="https://i.postimg.cc/NFyJsp8H/Whats-App-Image-2026-01-18-at-20-25-49.jpg">
-                    <h4 class="text-2xl font-bold mb-3">manis</h4>
-                    <p class="text-gray-500 mb-6 text-sm">Paduan rasa manis nagih dan gurih yang bikin susah berhenti makan.</p>
-                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 6.000</p>
-                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20manis" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
-                </div>
-            </div>
-        </div>
+<style>
+    .swiper { width: 100%; height: auto; border-radius: 24px; }
+    .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .swiper-pagination-bullet { background: #6b7280; opacity: 1; }
+    .swiper-pagination-bullet-active { background: #a855f7 !important; width: 24px; border-radius: 5px; }
     
-    <section id="pesan-kustom" class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl">
-        <div class="bg-orange-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-orange-200">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-orange-800 mb-4">Form Pemesanan Kustom</h2>
-                <p class="text-gray-600">Isi detail di bawah untuk pesanan yang lebih akurat</p>
+    /* Style untuk News Card */
+    .news-card { background: white; border-radius: 12px; overflow: hidden; transition: transform 0.3s; }
+    .news-card:hover { transform: scale(1.02); }
+    .news-card img { width: 100%; height: 160px; object-fit: cover; }
+    .news-text-box { padding: 15px; color: #111; }
+</style>
+
+<header class="p-4 md:px-12 mt-4">
+    <div class="swiper mySwiper shadow-2xl">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis_5j8uXn-Xm0wX1_vV1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0V1v0/s1600/Promo-MLBB-ShopeePay.jpg" alt="MLBB Promo">
             </div>
+            <div class="swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_discord_banner.jpg" alt="Discord Join">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEk_promo_bundle.jpg" alt="Promo Bundle">
+            </div>
+        </div>
+        <div class="swiper-pagination !bottom-4"></div>
+    </div>
+</header>
 
-            <form id="waForm" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-700">Pilih Varian Rasa</label>
-                        <select id="rasa" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
-                            <option value="Original Manis">Original Manis (Rp 5.000)</option>
-                            <option value="Cokelat Lumer">Cokelat Lumer (Rp 7.000)</option>
-                            <option value="Pedas Gurih">Pedas Gurih (Rp 6.000)</option>
-                            <option value="Campur/Mix">Campur / Mix Rasa</option>
-                        </select>
-                    </div>
+<section class="p-4 md:px-12 mt-12">
+    <div class="flex justify-between items-end mb-6">
+        <h2 class="text-3xl font-black italic uppercase tracking-tighter">News and Updates</h2>
+        <a href="#" class="text-yellow-400 font-bold text-sm underline uppercase tracking-widest">Tampilkan Semua</a>
+    </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-700">Jumlah Bungkus</label>
-                        <input type="number" id="jumlah" min="1" value="1" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
-                    </div>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="news-card flex flex-col cursor-pointer">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_promo_news.jpg" alt="Promo News">
+            <div class="news-text-box bg-white flex-1">
+                <h4 class="font-black text-lg uppercase mb-1">CEK INFO</h4>
+                <p class="text-sm text-gray-600 font-medium leading-relaxed">Promo dan Berita update lainnya.</p>
+            </div>
+        </div>
 
-                <div>
-                    <label class="block text-sm font-semibold mb-2 text-gray-700">Alamat Lengkap Pengiriman</label>
-                    <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda..." class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
-                </div>
-
-                <button type="button" onclick="kirimWA()" class="w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition flex items-center justify-center space-x-3 shadow-lg">
-                    <i class="fab fa-whatsapp text-2xl"></i>
-                    <span>Kirim Pesanan ke WhatsApp</span>
-                </button>
-            </form>
+        <div class="news-card flex flex-col cursor-pointer">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_warning_news.jpg" alt="Warning APK">
+            <div class="news-text-box bg-white flex-1 border-l-4 border-purple-600">
+                <h4 class="font-black text-lg uppercase mb-1">Waspada Penipuan APK!</h4>
+                <p class="text-sm text-gray-600 font-medium leading-relaxed">Pengumuman penting dari NeonTopup terkait keamanan.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<script>
-    function kirimWA() {
-        const nomorWA = "6282124360741";
-        const rasa = document.getElementById('rasa').value;
-        const jumlah = document.getElementById('jumlah').value;
-        const alamat = document.getElementById('alamat').value;
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        if (alamat === "") {
-            alert("Mohon isi alamat pengiriman terlebih dahulu!");
-            return;
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // Fitur geser tangan (touch) otomatis aktif
+        grabCursor: true,
+    });
+</script>
+    <main class="p-4 md:px-12 space-y-12 pb-20">
+
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fas fa-bolt text-yellow-400 text-2xl"></i>
+                <h2 class="text-2xl font-extrabold italic uppercase">Web Store</h2>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="glass card-game rounded-2xl overflow-hidden cursor-pointer transition-all duration-300">
+                    <img src="https://img.codashop.com/cdn-cgi/image/width=128,height=128,quality=75,format=auto/images/products/roblox_tile.png" class="w-full aspect-square object-cover" alt="Roblox">
+                    <div class="p-3 text-center">
+                        <p class="font-bold text-sm truncate uppercase">Roblox</p>
+                    </div>
+                </div>
+                <div class="glass card-game rounded-2xl overflow-hidden cursor-pointer relative transition-all duration-300">
+                    <div class="absolute top-0 left-0 bg-yellow-400 text-black text-[10px] font-black px-3 py-1 rounded-br-xl z-10 shadow-lg">UPDATE BARU</div>
+                    <img src="https://img.codashop.com/cdn-cgi/image/width=128,height=128,quality=75,format=auto/images/products/mobile_legends_horizontal_tile.png" class="w-full aspect-square object-cover" alt="Mobile Legends">
+                    <div class="p-3 text-center">
+                        <p class="font-bold text-sm truncate uppercase">Mobile Legends</p>
+                    </div>
+                </div>
+                <div class="glass card-game rounded-2xl overflow-hidden cursor-pointer transition-all duration-300">
+                    <img src="https://img.codashop.com/cdn-cgi/image/width=128,height=128,quality=75,format=auto/images/products/genshin_impact_horizontal_tile.png" class="w-full aspect-square object-cover" alt="Genshin">
+                    <div class="p-3 text-center">
+                        <p class="font-bold text-sm truncate uppercase">Genshin Impact</p>
+                    </div>
+                </div>
+                <div class="glass card-game rounded-2xl overflow-hidden cursor-pointer transition-all duration-300">
+                    <img src="https://img.codashop.com/cdn-cgi/image/width=128,height=128,quality=75,format=auto/images/products/free_fire_horizontal_tile.png" class="w-full aspect-square object-cover" alt="FF">
+                    <div class="p-3 text-center">
+                        <p class="font-bold text-sm truncate uppercase">Free Fire</p>
+                    </div>
+                </div>
+                </div>
+               </div>
+               <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Top-Up Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #2c0339; /* Warna ungu gelap */
+            --card-bg: #3d0a4d;
+            --yellow: #f3c319;
+            --white: #ffffff;
+            --text-gray: #333;
         }
 
-        const pesan = "Halo Kripik Nagih, saya ingin pesan kustom:%0A%0A" +
-                      "*Varian:* " + rasa + "%0A" +
-                      "*Jumlah:* " + jumlah + " bungkus%0A" +
-                      "*Alamat:* " + alamat + "%0A%0A" +
-                      "Mohon segera diproses ya!";
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--white);
+        }
 
-        const linkWA = "https://wa.me/" + nomorWA + "?text=" + pesan;
-        window.open(linkWA, '_blank');
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- BAGIAN 1: DAFTAR GAME (OVERLAY) --- */
+        #game-list-section {
+            display: block; /* Muncul di awal */
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid-games {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .game-card .badge {
+            position: absolute;
+            top: 0; left: 0;
+            background: var(--yellow);
+            color: black;
+            font-size: 11px;
+            padding: 6px 12px;
+            font-weight: bold;
+            border-bottom-right-radius: 12px;
+            z-index: 2;
+        }
+
+        .game-name {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* --- BAGIAN 2: DETAIL TOP UP --- */
+        #topup-detail-section {
+            display: none; /* Tersembunyi di awal */
+        }
+
+        .btn-back {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid white;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .header-game {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-game img {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .secure-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .layout-main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .desc-side p {
+            line-height: 1.6;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        /* Form Styling */
+        .step-box {
+            background: white;
+            color: var(--text-gray);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .step-circle {
+            position: absolute;
+            top: -15px; left: -15px;
+            background: #5d3dfc;
+            color: white;
+            width: 35px; height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 4px solid var(--primary-bg);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        .grid-nominal {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .nominal-item {
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .nominal-item:hover {
+            border-color: #5d3dfc;
+            background: #f8f7ff;
+        }
+
+        .nominal-item b {
+            display: block;
+            color: #e91e63;
+            margin-top: 5px;
+        }
+
+        /* --- BAGIAN 3: FOOTER (Kuning) --- */
+        .footer-yellow {
+            background-color: var(--yellow);
+            color: var(--text-gray);
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-col h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--text-gray);
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .btn-footer {
+            background: #d4a706;
+            padding: 12px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0,0,0,0.1);
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 11px;
+            display: flex;
+            gap: 20px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIF HP */
+        @media (max-width: 900px) {
+            .layout-main { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .grid-nominal { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .social-links { justify-content: center; }
+            .btn-footer { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="game-list-section">
+        <h2 class="section-title">★★ POPULER</h2>
+        <div class="grid-games">
+            <div class="game-card" onclick="showGame('Free Fire', 'https://via.placeholder.com/240x300/FF4500/FFFFFF?text=Free+Fire', 'Top up Free Fire Diamonds instan hanya di sini.')">
+                <img src="https://via.placeholder.com/240x300/FF4500/FFFFFF?text=Free+Fire" alt="Free Fire">
+                <div class="game-name">Free Fire</div>
+            </div>
+            <div class="game-card" onclick="showGame('Mobile Legends', 'https://via.placeholder.com/240x300/0000FF/FFFFFF?text=MLBB', 'Dapatkan Diamond MLBB termurah dan tercepat.')">
+                <span class="badge">UPDATE BARU</span>
+                <img src="https://via.placeholder.com/240x300/0000FF/FFFFFF?text=MLBB" alt="Mobile Legends">
+                <div class="game-name">Mobile Legends</div>
+            </div>
+            <div class="game-card" onclick="showGame('Genshin Impact', 'https://via.placeholder.com/240x300/00FF7F/FFFFFF?text=Genshin', 'Top up Genesis Crystal aman dan legal.')">
+                <img src="https://via.placeholder.com/240x300/00FF7F/FFFFFF?text=Genshin" alt="Genshin Impact">
+                <div class="game-name">Genshin Impact</div>
+            </div>
+        </div>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Instan ke WA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #2c0339;
+            --card: #ffffff;
+            --primary: #5d3dfc;
+            --accent: #e91e63;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-card {
+            background: var(--card);
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 { text-align: center; color: var(--bg); margin-bottom: 25px; }
+
+        .step { margin-bottom: 20px; }
+        label { font-weight: bold; display: block; margin-bottom: 8px; font-size: 14px; }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        input:focus { border-color: var(--primary); outline: none; }
+
+        /* Grid Diamond */
+        .dm-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .dm-item {
+            border: 2px solid #eee;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .dm-item.active {
+            border-color: var(--primary);
+            background: #f8f7ff;
+            transform: scale(0.98);
+        }
+
+        .dm-item b { display: block; color: var(--accent); font-size: 16px; }
+
+        /* Tombol WA */
+        .btn-wa {
+            display: none; /* Muncul jika valid */
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-card">
+    <h2>Top Up Free Fire</h2>
+
+    <div class="step">
+        <label>1. Masukkan Player ID</label>
+        <input type="text" id="user-id" placeholder="Contoh: 12345678" oninput="checkData()">
+    </div>
+
+    <div class="step">
+        <label>2. Pilih Nominal Diamond</label>
+        <div class="dm-grid">
+            <div class="dm-item" onclick="selectDm(this, '5 Diamonds', 'Rp 1.500')">
+                5 DM <b>Rp 1.500</b>
+            </div>
+            <div class="dm-item" onclick="selectDm(this, '50 Diamonds', 'Rp 8.000')">
+                50 DM <b>Rp 8.000</b>
+            </div>
+            <div class="dm-item" onclick="selectDm(this, '100 Diamonds', 'Rp 16.000')">
+                100 DM <b>Rp 16.000</b>
+            </div>
+            <div class="dm-item" onclick="selectDm(this, '500 Diamonds', 'Rp 80.000')">
+                500 DM <b>Rp 80.000</b>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="wa-button" class="btn-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i> Bayar Sekarang
+    </a>
+</div>
+
+<script>
+    let orderData = { id: "", dm: "", harga: "" };
+    const myWA = "6281234567890"; // GANTI DENGAN NOMOR WA ANDA
+
+    function selectDm(el, val, price) {
+        // Reset pilihan lain
+        document.querySelectorAll('.dm-item').forEach(i => i.classList.remove('active'));
+        // Aktifkan yang dipilih
+        el.classList.add('active');
+        
+        orderData.dm = val;
+        orderData.harga = price;
+        checkData();
+    }
+
+    function checkData() {
+        orderData.id = document.getElementById('user-id').value;
+        const btn = document.getElementById('wa-button');
+
+        // Validasi: ID minimal 5 angka dan DM sudah dipilih
+        if (orderData.id.length >= 5 && orderData.dm !== "") {
+            btn.style.display = 'flex';
+            
+            // Format Pesan
+            const pesan = `Halo Admin, saya ingin order:\n\n` +
+                          `🎮 Game: Free Fire\n` +
+                          `🆔 ID: ${orderData.id}\n` +
+                          `💎 Produk: ${orderData.dm}\n` +
+                          `💰 Total: ${orderData.harga}\n\n` +
+                          `Mohon diproses, terima kasih!`;
+            
+            btn.href = `https://wa.me/${myWA}?text=${encodeURIComponent(pesan)}`;
+        } else {
+            btn.style.display = 'none';
+        }
     }
 </script>
 
 </body>
 </html>
-</section>
+<script>
+    function showGame(name, img, desc) {
+        document.getElementById('game-list-section').style.display = 'none';
+        document.getElementById('topup-detail-section').style.display = 'block';
+        
+        document.getElementById('game-title').innerText = name;
+        document.getElementById('game-icon').src = img;
+        document.getElementById('game-desc').innerText = desc;
+        window.scrollTo(0,0);
+    }
 
-    <footer class="py-20 px-6 bg-orange-600 text-white text-center">
-        <div class="container mx-auto max-w-2xl">
-            <h3 class="text-3xl font-bold mb-6">Lagi di Rumah Aja? Temani Waktumu dengan Kripik Nagih!</h3>
-            <p class="mb-10 opacity-80">Siap kirim ke seluruh wilayah. Pesan sekarang melalui WhatsApp untuk respon cepat.</p>
-            <a href="https://wa.me/6282124360741" class="inline-flex items-center space-x-3 bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-2xl">
-                <i class="fab fa-whatsapp text-2xl"></i>
-                <span>Order via WhatsApp</span>
-            </a>
+    function hideGame() {
+        document.getElementById('game-list-section').style.display = 'block';
+        document.getElementById('topup-detail-section').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
+            <div class="flex gap-4 p-6 glass rounded-3xl items-center">
+                <div class="bg-purple-600/20 p-4 rounded-2xl text-purple-400 text-3xl"><i class="fas fa-clock"></i></div>
+                <div>
+                    <h4 class="font-bold">BAYAR DALAM DETIK</h4>
+                    <p class="text-xs text-gray-400">Pembayaran selesai hanya dengan beberapa klik saja.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 p-6 glass rounded-3xl items-center border-purple-500/30">
+                <div class="bg-purple-600/20 p-4 rounded-2xl text-purple-400 text-3xl"><i class="fas fa-gem"></i></div>
+                <div>
+                    <h4 class="font-bold">PENGIRIMAN INSTAN</h4>
+                    <p class="text-xs text-gray-400">Item langsung masuk ke akun kamu tanpa tertunda.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 p-6 glass rounded-3xl items-center">
+                <div class="bg-purple-600/20 p-4 rounded-2xl text-purple-400 text-3xl"><i class="fas fa-headset"></i></div>
+                <div>
+                    <h4 class="font-bold">BANTUAN 24/7</h4>
+                    <p class="text-xs text-gray-400">Tim support kami siap membantu kapanpun dibutuhkan.</p>
+                </div>
+            </div>
+        </section>
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Tampilan planet game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #280031; /* Warna ungu gelap khas Codashop */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            margin-bottom: 50px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* Grid System untuk Fitur */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+            gap: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        /* Styling Icon Lingkaran */
+        .icon-circle {
+            background-color: white;
+            color: #280031;
+            min-width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #ffcc00;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</div>
+<main class="p-4 md:px-10 space-y-9 pb-10"></main>
+<div class="container">
+    <h1>PLANET GAME</h1>
+
+    <div class="features-grid">
+        <div class="feature-item">
+            <div class="icon-circle"><i class="fas fa-clock"></i></div>
+            <div class="content">
+                <h3>Bayar dalam hitungan detik</h3>
+                <p>Hanya dibutuhkan beberapa detik saja untuk menyelesaikan pembayaran di PLANET GAME karena situs kami berfungsi dengan baik.</p>
+            </div>
         </div>
-    </section>
 
-    <footer class="py-10 text-center border-t border-orange-100 text-gray-400 text-sm">
-        <p>&copy; 2026 KRIPK NAGIH. Semua Hak Dilindungi.</p>
-    </footer>
+        <div class="feature-item">
+            <div class="icon-circle"><i class="fas fa-bolt"></i></div>
+            <div class="content">
+                <h3>Pengiriman instan</h3>
+                <p>Ketika kamu melakukan top-up di PLANET GAME, item atau barang yang kamu beli akan selalu dikirim ke akun kamu secara instan.</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="icon-circle"><i class="fas fa-wallet"></i></div>
+            <div class="content">
+                <h3>Metode pembayaran terbaik</h3>
+                <p>Kami menawarkan begitu banyak pilihan pembayaran mulai dari potong pulsa, e-wallet, bank transfer, dan lainnya.</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="icon-circle"><i class="fas fa-headset"></i></div>
+            <div class="content">
+                <h3>Layanan Pelanggan Cepat & Ramah</h3>
+                <p>Tim CS terbaik kami selalu siap membantumu kapanpun, di manapun. <a href="#">Hubungi kami!</a></p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="icon-circle"><i class="fas fa-percentage"></i></div>
+            <div class="content">
+                <h3>Promosi-promosi menarik</h3>
+                <p>Penggemar game dapat bergantung pada Codashop karena kami memberikan penawaran menarik, diskon dan kode item.</p>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+</main>
+
+    <footer class="bg-yellow-400 p-8 md:px-20 text-black">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+            <h4 class="font-black text-lg mb-4">Untuk Penerbit</h4>
+            <p class="text-sm mb-2">Daftarkan judul Anda di Codashop</p>
+            <p class="text-sm">Pelajari lebih lanjut tentang kami</p>
+        </div>
+        <div>
+            <h4 class="font-black text-lg mb-4 uppercase">Butuh Bantuan?</h4>
+            <button class="bg-[#d4ac0d] px-6 py-2 rounded-xl font-bold flex items-center gap-2 hover:bg-[#c49c0c] transition">
+                <i class="fas fa-comment"></i> Hubungi Kami
+            </button>
+        </div>
+        <div>
+            <h4 class="font-black text-lg mb-4 uppercase">Area</h4>
+            <div class="bg-[#d4ac0d] px-4 py-2 rounded-xl font-bold flex items-center gap-2 w-fit">
+                <img src="URL_BENDERA_INDONESIA" class="w-6 shadow-sm"> Indonesia
+            </div>
+        </div>
+        <div>
+            <h4 class="font-black text-lg mb-4">Dapatkan berita Coda di:</h4>
+            <div class="flex gap-4 text-3xl">
+                <i class="fab fa-facebook hover:text-blue-800 cursor-pointer"></i>
+                <i class="fab fa-youtube hover:text-red-700 cursor-pointer"></i>
+                <i class="fab fa-instagram hover:text-pink-700 cursor-pointer"></i>
+                <i class="fab fa-tiktok hover:text-gray-800 cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mt-12 text-[10px] border-t border-black/10 pt-6 flex flex-wrap gap-4 uppercase font-bold text-gray-700">
+        <p>©Hak Cipta Coda Payments</p>
+        <p>Pemasaran dan Kemitraan</p>
+        <p>Syarat & Ketentuan</p>
+        <p>Kebijakan Privasi</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 4000 },
+        pagination: { el: ".swiper-pagination", clickable: true },
+    });
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Codashop Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            background-color: #f3c319; /* Warna kuning khas */
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Tombol & Area Style */
+        .btn-footer {
+            background-color: #d4a706;
+            padding: 10px 20px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-footer i {
+            margin-right: 10px;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            color: #333;
+        }
+
+        /* Bottom Copyright Section */
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Responsive Settings for Mobile */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column; /* Menumpuk ke bawah di HP */
+            }
+            .footer-section {
+                text-align: center;
+            }
+            .social-icons {
+                justify-content: center;
+            }
+            .footer-bottom {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
